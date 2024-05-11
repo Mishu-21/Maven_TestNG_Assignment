@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Assignment198_Suite">
+  <test thread-count="5" name="Assignment198_Test">
+    <classes>
+		      <class name="Assignment.Assignment198_MultipleClasses_RunThroughTestNG"/>
+
+      <class name="Assignment.Mutiple"/>
+    </classes>
+  </test> <!-- Assignment198_Test -->
+</suite> <!-- Assignment198_Suite -->
