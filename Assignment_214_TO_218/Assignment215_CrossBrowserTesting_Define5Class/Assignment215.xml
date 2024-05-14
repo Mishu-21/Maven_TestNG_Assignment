@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Assignment215_Suite">
+  
+	  <test thread-count="5" name="ChromeBrowser">
+	<parameter name="nameOfBrowser" value="chrome"></parameter>
+    <classes>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class1_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class4_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class2_2TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class3_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class5_2TestCase"/>
+    </classes>
+  </test> <!-- Assignment215_Test -->
+  
+  <test thread-count="5" name="EdgeBrowser">
+	<parameter name="nameOfBrowser" value="edge"></parameter>
+    <classes>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class1_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class4_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class2_2TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class3_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class5_2TestCase"/>
+    </classes>
+  </test> <!-- Assignment215_Test -->
+  
+  <test thread-count="5" name="FireFoxBrowser">
+	<parameter name="nameOfBrowser" value="Firefox"></parameter>
+    <classes>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class1_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class4_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class2_2TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class3_1TestCase"/>
+      <class name="Assignment215_CrossBrowserTesting_Define5Class.Class5_2TestCase"/>
+    </classes>
+  </test> <!-- Assignment215_Test -->
+  
+</suite> <!-- Assignment215_Suite -->

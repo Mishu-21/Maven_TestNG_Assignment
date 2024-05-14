@@ -1,0 +1,36 @@
+Run on specific one browser
+
+Steps:
+           1.Define 5 classes with few testcases in it 
+                       as we have 5 classes so they must have some inheritance between them because agr inheritance nhi show kari toh mjhko har ek test case mai define krna hoga driver  ki kaunsa browser hai choose karo  so code resuablility nhi hogi theregore show inheritance and yha @Before annotation use karlo because yeh phle he ho jayega 
+                       Therefore try to inherite 
+                       and yeh dikkat cross browser mai aayegi yha single mai toh vhrome mai krdo sb define  
+           2.In common class define 1 Annotation which is Parameter and pass browser which will tell that in which browser we are going to run our test cases 
+           3.Now right click on project -->TestNG--->Convert to testNG 
+               an xml file will be generated 
+syntax:----------------
+suite 
+test 
+classes
+class
+/classes
+/test
+/suite
+              
+ than  define paramter annotation inside  xml
+                 and is declared after test 
+Syntax:        suite 
+               test
+               <parameter name="browser" value="chrome"></parameter>
+               classes
+               class
+               /classes
+               /test
+               /suite
+
+           4.Now run xml file through testng 
+
+
+
+OUTPUT::--------
+we will see all my test cases are runned in chromebrowser as i have choosed one browser

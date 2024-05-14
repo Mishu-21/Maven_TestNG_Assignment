@@ -1,0 +1,63 @@
+To do cros browser testing 
+
+Steps:
+           1.Define 5 classes with few testcases in it 
+                       as we have 5 classes so they must have some inheritance between them because agr inheritance nhi show kari toh mjhko har ek test case mai check krna higa ki kaunsa browser hai check karo so code resuablility nhio hogi
+                       Therefore try to inherite 
+                       and jo common class hogi vha check karo 
+ki kaunsa browser  hai and vha test case run karo  .
+           2.In common class define 1 Annotation which is Parameter and pass browser which will tell that in which browser we are going to run our test cases 
+and using if else choose the browser 
+
+WebDriver driver;
+
+	@Parameters("nameOfBrowser")
+	@BeforeMethod
+	public void launch(String which_Browser)
+	{
+		if(which_Browser.equals("chrome"))
+		{
+			driver= new ChromeDriver();
+		}
+		if(which_Browser.equals("Firefox"))
+		{
+			driver= new FirefoxDriver();
+		}
+		if(which_Browser.equals("edge"))
+		{
+			driver= new EdgeDriver();
+		}
+	}
+
+//above code will check which browser to launch 
+
+           3.Now right click on project -->TestNG--->Convert to testNG 
+               an xml file will be generated 
+syntax:----------------
+suite 
+test 
+classes
+class
+/classes
+/test
+/suite
+              
+ than  define paramter annotation inside  xml and in test in name para add different parameter name  and copy paste and launch on define browser 
+                 and is declared after test 
+Syntax:        suite 
+              
+              <test thread-count="5" name="ChromeBrowser">
+	<parameter name="nameOfBrowser" value="chrome"></parameter>
+               classes
+               class
+               /classes
+               /test
+               /suite
+
+and har test ka nad paramter mai value wale parameter ki balues unique honi cahhiye 
+           4.Now run xml file through testng 
+
+
+
+OUTPUT::--------
+we will see all my test cases are runned in different browser and sequence is as per defined in xml file 
